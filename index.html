@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,85 +6,87 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <title>A Portfolio of Chris' Udacity Projects</title>
   </head>
   <body>
     <div class="container">
-    <header>
-      <div class="row">
-        <div class="col-xs-3 col-sm-3 col-md-3">
-          <img class="title-logo" src="https://d125fmws0bore1.cloudfront.net/assets/svgs/logo-udacity-mark-e55958b7fd6d392c1e343b02a9e045cb669c33cfa1bb772bba40897a0f2b482d.svg">
+<!-- Header Section -->
+      <header class="header-section">
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <img class="title-logo" src="https://d125fmws0bore1.cloudfront.net/assets/svgs/logo-udacity-mark-e55958b7fd6d392c1e343b02a9e045cb669c33cfa1bb772bba40897a0f2b482d.svg" alt="Udacity Logo">
+          </div>
+          <div class="col-xs-9 col-sm-9 col-md-9 text-uppercase text-right">
+            <h1 class="title-super">Chris Aasted</h1>
+            <h3 class="title-sub">Full Stack Web Developer</h3>
+          </div>
         </div>
-        <div class="col-xs-9 col-sm-9 col-md-9 text-uppercase text-right">
-          <h1 class="title-super">Chris Aasted</h1>
-          <h3 class="title-sub">Full Stack Web Developer</h3>
+        <div class="row">
+          <div class="col-md-12 custom-hr">
+            .
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 custom-hr">
-          .
+        <div class="row">
+          <div class="col-md-12">
+            <picture>
+              <source media="(min-width: 992px)" srcset="images/coding_stock_photo-1140_large.jpg">
+              <source media="(min-width: 361px)" srcset="images/coding_stock_photo-720_medium.jpg">
+              <source media="(max-width: 360px)" srcset="images/coding_stock_photo-720_medium.jpg 2x, images/coding_stock_photo-360_small.jpg 1x">
+              <img class="img-responsive" src="images/coding_stock_photo-360_small.jpg" alt="Stock photo of code on a screen">
+            </picture>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <picture>
-            <source media="(min-width: 992px)" srcset="images/coding_stock_photo-1140_large.jpg 1140w">
-            <source media="(min-width: 361px)" srcset="images/coding_stock_photo-720_medium.jpg 720w">
-            <source media="(max-width: 360px)" srcset="images/coding_stock_photo-720_medium.jpg 2x, images/coding_stock_photo-360_small.jpg 1x">
-            <img class="img-responsive" src="images/coding_stock_photo-360_small.jpg">
-          </picture>
+      </header>
+<!-- Projects Section -->
+      <section class="project-section">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-muted projects-section-title">Featured Work</h2>
+          </div>
         </div>
-      </div>
-    </header>
-    <article>
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="text-muted projects-section-title">Featured Work</h2>
+        <div class="row projects">
+          <div class="col-md-4">
+            <picture>
+              <source media="(max-width: 992px) and (min-width: 390px)" srcset="images/game_stock_photo-720_medium.jpg">
+              <img class="img-responsive" src="images/game_stock_photo-360_small.jpg" alt="Swiss-Style Tournament Preview Image" data-toggle="modal" data-target="#project1">
+            </picture>
+            <h3 class="text-uppercase project-title">Swiss-Style Tournament</h3>
+            <p><a href="https://github.com/caasted/Swiss-Style-Tournament">github.com/caasted/Swiss-Style-Tournament</a></p>
+          </div>
+          <div class="col-md-4">
+            <picture>
+              <source media="(max-width: 992px) and (min-width: 390px)" srcset="images/responsive_design_photo-720_medium.jpg">
+              <img class="img-responsive smaller-photo" src="images/responsive_design_photo-360_small.jpg" alt="Responsive Portfolio Preview Image" data-toggle="modal" data-target="#project2">
+            </picture>
+            <h3 class="text-uppercase project-title">Responsive Portfolio</h3>
+            <p><a href="https://github.com/caasted/portfolio-webpage">github.com/caasted/portfolio-webpage</a></p>
+          </div>
+          <div class="col-md-4">
+            <picture>
+              <source media="(max-width: 992px) and (min-width: 390px)" srcset="images/css_stock_photo-720_medium.jpg">
+              <img class="img-responsive" src="images/css_stock_photo-360_small.jpg" alt="Movie Trailer Website Preview Image" data-toggle="modal" data-target="#project3">
+            </picture>
+            <h3 class="text-uppercase project-title">Movie Trailer Website</h3>
+            <p><a href="https://github.com/caasted/movie-trailer-website">github.com/caasted/movie-trailer-website</a></p>
+          </div>
         </div>
-      </div>
-      <div class="row projects">
-        <div class="col-md-4">
-          <picture>
-            <source media="(max-width: 992px) and (min-width: 390px)" srcset="images/game_stock_photo-720_medium.jpg 720w">
-            <img class="img-responsive" src="images/game_stock_photo-360_small.jpg" alt="Swiss-Style Tournament Preview Image" data-toggle="modal" data-target="#project1">
-          </picture>
-          <h3 class="text-uppercase project-title">Swiss-Style Tournament</h3>
-          <p><a href="https://github.com/caasted/Swiss-Style-Tournament">github.com/caasted/Swiss-Style-Tournament</a></p>
-        </div>
-        <div class="col-md-4">
-          <picture>
-            <source media="(max-width: 992px) and (min-width: 390px)" srcset="images/responsive_design_photo-720_medium.jpg 720w">
-            <img class="img-responsive smaller-photo" src="images/responsive_design_photo-360_small.jpg" alt="Responsive Portfolio Preview Image" data-toggle="modal" data-target="#project2">
-          </picture>
-          <h3 class="text-uppercase project-title">Responsive Portfolio</h3>
-          <p><a href="https://github.com/caasted/portfolio-webpage">github.com/caasted/portfolio-webpage</a></p>
-        </div>
-        <div class="col-md-4">
-          <picture>
-            <source media="(max-width: 992px) and (min-width: 390px)" srcset="images/css_stock_photo-720_medium.jpg 720w">
-            <img class="img-responsive" src="images/css_stock_photo-360_small.jpg" alt="Movie Trailer Website Preview Image" data-toggle="modal" data-target="#project3">
-          </picture>
-          <h3 class="text-uppercase project-title">Movie Trailer Website</h3>
-          <p><a href="https://github.com/caasted/movie-trailer-website">github.com/caasted/movie-trailer-website</a></p>
-        </div>
-      </div>
-    </article>
+      </section>
     </div>
-<!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modals -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="tournament-label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Swiss-Style Tournament</h4>
+                    <h4 class="modal-title" id="tournament-label">Swiss-Style Tournament</h4>
                 </div>
                 <div class="modal-body">
                     <picture>
-                      <source media="(min-width: 390px)" srcset="images/game_stock_photo-720_medium.jpg 720w">
-                      <img class="img-responsive" src="images/game_stock_photo-360_small.jpg" alt="Swiss-Style Tournament Preview Image" data-toggle="modal" data-target="#project1">
+                      <source media="(min-width: 390px)" srcset="images/game_stock_photo-720_medium.jpg">
+                      <img class="img-responsive" src="images/game_stock_photo-360_small.jpg" alt="Swiss-Style Tournament Graphic" data-toggle="modal" data-target="#project1">
                     </picture>
-                    I developed a database schema to store game matches between players. I wrote code to query this data and determine appropriate pairings between players for subsequent rounds in a tournament.
+                    A database schema that I developed to store game matches between players. I wrote code to query this data and determine appropriate pairings between players for subsequent rounds in a tournament.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -92,18 +94,18 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="portfolio-label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Responsive Portfolio</h4>
+                    <h4 class="modal-title" id="portfolio-label">Responsive Portfolio</h4>
                 </div>
                 <div class="modal-body">
                     <picture>
-                      <source media="(min-width: 390px)" srcset="images/responsive_design_photo-720_medium.jpg 720w">
-                      <img class="img-responsive" src="images/responsive_design_photo-360_small.jpg">
+                      <source media="(min-width: 390px)" srcset="images/responsive_design_photo-720_medium.jpg">
+                      <img class="img-responsive" src="images/responsive_design_photo-360_small.jpg" alt="Responsive Portfolio Graphic">
                     </picture>
-                    I developed a responsive website, based on a design mockup, that displays images, descriptions and links to several of the projects I have completed through my Udacity coursework.
+                    A responsive website that I developed, based on a design mockup. It displays images, descriptions and links to several of the projects I have completed through my Udacity coursework.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -111,18 +113,18 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="movie-website-label" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Movie Trailer Website</h4>
+                    <h4 class="modal-title" id="movie-website-label">Movie Trailer Website</h4>
                 </div>
                 <div class="modal-body">
                     <picture>
-                      <source media="(min-width: 390px)" srcset="images/css_stock_photo-720_medium.jpg 720w">
-                      <img class="img-responsive" src="images/css_stock_photo-360_small.jpg">
+                      <source media="(min-width: 390px)" srcset="images/css_stock_photo-720_medium.jpg">
+                      <img class="img-responsive" src="images/css_stock_photo-360_small.jpg" alt="Movie Trailer Website Graphic">
                     </picture>
-                    I wrote server-side code to store a list of my favorite movies, including box art imagery and a movie trailer URL. I have served this data as a web page allowing visitors to review these movies and watch the trailers.
+                    Server-side code that I wrote to store a list of my favorite movies, including box art imagery and a movie trailer URL. I have served this data as a web page allowing visitors to review these movies and watch the trailers.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
